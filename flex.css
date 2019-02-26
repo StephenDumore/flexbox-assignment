@@ -1,0 +1,79 @@
+/* Box-sizing border-box */
+* { box-sizing: border-box; }
+
+
+/* Some default styles to make each box visible. This targets all items with a class that starts with "box" */
+[class^="box"] {
+  color:white;
+  font-size: 100px;
+  text-align: center;
+  text-shadow:4px 4px 0 rgba(0,0,0,0.1);
+  padding:10px;
+}
+
+/* Colors for each box */
+.box1 { background:#1add;}
+.box2 { background:#3498db;}
+.box3 { background:#9b59b6;}
+.box4 { background:pink;}
+.box5 { background:black;}
+.box6 { background:#e5345435;}
+.box7 { background:#e74c3c;}
+.box8 { background:blue;}
+.box9 { background:#2ecc71;}
+.box10 { background:#324929;}
+
+
+/* We start writing our flexbox here. The above is just page setup */
+
+.flex-container {
+  justify-content: center;
+  align-content: stretch;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border:10px solid goldenrod;
+
+}
+
+
+[class^="box"] {
+    
+}
+
+.box1 {
+    height: 4em;
+    width: 100%;
+}
+
+.box2 {
+    height: 2em;
+    width: 50%;
+}
+.box3 {
+   width: 50%;
+}
+.box4 {
+    height: 1.5em;
+    width: 25%;
+
+}
+.box5 {
+   width: 25%;
+}
+.box6 {
+    width: 25%;
+}
+.box7 {
+    width: 25%;
+}
+.box8 {
+    flex-grow: 1
+}
+.box9 {
+    flex-grow: 1
+}
+.box10 {
+    flex-grow: 1
+
+}
